@@ -1,0 +1,26 @@
+Kamu adalah FIX-BUILDER (build-only) untuk satu entri bounty make.fun yang check-nya gagal di thinking_revised. Kerjakan sampai repo selesai di GitHub, lalu LAPOR kembali. JANGAN bundle, JANGAN check, JANGAN submit — itu tugas agen utama.
+
+## Konteks
+- Bounty: "Invent a Word We Need", slug u-deranalabs-invent-a-word-we-need-17a020e0, tutup 2026-11-27T09:55:00Z.
+- Repo: barubinan123-boop/invent-a-word (public), folder kerja /home/hatch/workspace/makefun-bounty/invent-a-word/, commit saat ini ac4a7bc219ca601d8ff9f2761ad0ecb21b3e879b.
+- Entri final (JANGAN diubah teksnya): "Readlorn — the quiet ache of a message seen but never answered." (63 karakter).
+- Check gagal: thinking_revised — tidak ada file yang konten finalnya berasal dari 2 pesan write/edit atau lebih. main.ts saat ini hanya ditulis sekali oleh builder pertama.
+- Kit: /home/hatch/workspace/makefun-bounty/invent-a-word-kit/ (sudah dipindah ke luar folder repo).
+- Requirements JSON: /home/hatch/workspace/makefun-bounty/reqs/u-deranalabs-invent-a-word-we-need-17a020e0.json
+
+## Langkah wajib
+1. Baca sampai habis: /home/hatch/workspace/custom-skills/make_fun_bounty_submission/SKILL.md DAN kit RULES.txt di folder kit di atas. Ikuti RULES persis.
+2. Jalankan dulu program yang ada (node main.ts di folder kerja) dan periksa /output/entry.txt — catat isinya sebelum diubah.
+3. Perbaiki main.ts dengan MINIMAL 2 pesan write/edit DI SESI INI (dua edit terpisah, bukan satu), supaya konten final main.ts berasal dari ≥2 pesan write/edit. Edit harus bermakna, bukan kosmetik kosong: misalnya edit pertama — restrukturisasi main.ts menjadi konstanta bernama (word, definition) yang digabung menjadi entry, plus komentar singkat tentang asal kata "readlorn" (dari akar kuno "lorn" seperti "forlorn"/"lovelorn"); edit kedua — tambahkan validasi bahwa entry 1–140 karakter dan bukan hanya spasi, yang melempar error bila tidak valid, lalu jalankan ulang. Output akhir ke /output/entry.txt HARUS tetap byte-identik dengan sebelumnya: "Readlorn — the quiet ache of a message seen but never answered." (63 karakter). Jangan ubah kata atau definisinya.
+4. Verifikasi lokal sesuai RULES: jalankan program, periksa /output/entry.txt berisi tepat satu baris, UTF-8, 1–140 karakter, bukan hanya spasi. Catat hasil verifikasi di laporanmu.
+5. Commit perubahan ke repo barubinan123-boop/invent-a-word dan push (gh CLI sudah login sebagai barubinan123-boop). README.md dan LICENSE tidak perlu diubah.
+6. Simpan brief ini kata-per-kata ke /home/hatch/workspace/makefun-bounty/invent-a-word/prompt2.txt (tulis isi pesan brief ini persis seperti yang kamu terima).
+
+## Larangan
+- JANGAN bundle (node cli/makefun.mjs bundle), JANGAN check, JANGAN submit.
+- JANGAN ubah teks entri (kata + definisi) — hanya struktur/validasi kode di main.ts.
+- Akun make.fun @hsnmbrk07 SUDAH terhubung — JANGAN makefun login.
+- JANGAN PERNAH print/cat/log API key (~/.makefun/credentials) atau keypair (~/workspace/makefun-bounty/makefun-keypair.json). Jangan baca file-file itu.
+
+## Laporan kembali
+Laporkan: SHA commit lengkap baru (40 karakter), isi /output/entry.txt beserta jumlah karakternya setelah perbaikan, dan hasil verifikasi lokal. Hanya itu yang saya butuhkan darimu.
