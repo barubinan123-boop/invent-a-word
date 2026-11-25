@@ -1,0 +1,31 @@
+Kamu adalah BUILDER (build-only) untuk satu entri bounty make.fun. Kerjakan sampai repo selesai di GitHub, lalu LAPOR kembali. JANGAN bundle, JANGAN check, JANGAN submit — itu tugas agen utama.
+
+## Bounty
+- Slug: u-deranalabs-invent-a-word-we-need-17a020e0
+- Judul: "Invent a Word We Need"
+- Hadiah: $5 total, 3 tempat (1st $2, 2nd $2, 3rd $1). Tanpa entry fee.
+- Tutup: 2026-11-27T09:55:00Z (27 Nov 2026 16:55 WIB). Result due 2026-12-19T13:55:00Z.
+- Repo baru: barubinan123-boop/invent-a-word (public, buat SETELAH kompetisi dibuka — kompetisi sudah dibuka, jadi buat sekarang).
+- Folder kerja: /home/hatch/workspace/makefun-bounty/invent-a-word/
+- Kit sudah diunduh di: /home/hatch/workspace/makefun-bounty/invent-a-word/u-deranalabs-invent-a-word-we-need-17a020e0-kit/
+- Requirements JSON: /home/hatch/workspace/makefun-bounty/reqs/u-deranalabs-invent-a-word-we-need-17a020e0.json
+
+## Langkah wajib
+1. Baca sampai habis: /home/hatch/workspace/custom-skills/make_fun_bounty_submission/SKILL.md DAN kit RULES.txt di folder kit di atas. Ikuti RULES persis.
+2. Tugas dari RULES: program (main.ts Node 22 ATAU main.py Python 3.13) di root repo yang menulis SATU baris teks ke /output/entry.txt. Baris itu adalah SATU kata bahasa Inggris baru yang belum ada + definisi satu baris, total 1–140 karakter, UTF-8, bukan hanya spasi. Judge membandingkan dua entri sekaligus dengan bobot (paling penting dulu): (1) benar-benar kata baru yang segar dengan definisi satu baris; (2) kata itu mengisi celah nyata — menamai sesuatu yang bahasa Inggris belum punya katanya dan langsung dikenali pembaca sebagai hal yang pernah mereka rasakan/lihat; (3) definisi tepat dan mandiri — maknanya sampai dalam sekali baca tanpa kalimat kedua atau contoh; (4) kata itu terbentuk baik dan mudah dipakai — bisa diucapkan, dieja, diingat, dan terdengar seperti kata yang memang bisa tumbuh dari bahasa Inggris; (5) pasangan kata-makna segar dan mengejutkan.
+3. Pilih SATU kata terkuatmu sendiri. Arah yang bagus: namai hal sehari-hari yang belum punya nama dan langsung dikenali semua orang — misalnya rasa bersalah membiarkan pesan "read" tanpa dibalas, momen lupa kenapa masuk ke sebuah ruangan, getar hantu ponsel yang sebenarnya tidak bergetar, atau membaca ulang pesan sendiri yang sudah terkirim untuk mengecek nadanya. Kata harus terdengar seperti bahasa Inggris asli (awalan/akhiran yang familiar, mudah diucapkan dan dieja), bukan sekadar gabungan dua kata yang ditempel. Format baris: "Kata — definisi satu kalimat." Pastikan total ≤140 karakter (hitung persis, termasuk spasi dan tanda baca). Jangan pakai kata yang sudah ada di kamus.
+4. TULIS file DI SESI INI dengan minimal 2 pesan write/edit (main.ts/main.py + README.md + LICENSE, dan file lain bila perlu). JANGAN salin starter kit apa pun — tulis dari nol. Ini bukan rebuild, jadi tidak ada implementasi lama untuk dibaca.
+5. README.md WAJIB memakai template 3 badge live dari requirements JSON (how_to_submit.readme_template), dengan placeholder diisi: {repo}=invent-a-word, {owner}=barubinan123-boop, {description}=deskripsi singkat entri + kata dan definisinya, {run}=perintah menjalankan program, {referral_code}=s0awek38. Badge 1: https://make.fun/badge/u-deranalabs-invent-a-word-we-need-17a020e0.svg ; badge rank: https://make.fun/badge/u-deranalabs-invent-a-word-we-need-17a020e0/barubinan123-boop/invent-a-word/rank.svg ; badge reward: https://make.fun/badge/u-deranalabs-invent-a-word-we-need-17a020e0/barubinan123-boop/invent-a-word/reward.svg. Semua badge menaut ke https://make.fun/bounty/u-deranalabs-invent-a-word-we-need-17a020e0 (dengan utm_source=github&utm_medium=readme&utm_campaign=u-deranalabs-invent-a-word-we-need-17a020e0). Footer: "Entered on [make.fun](https://make.fun/?ref=s0awek38&utm_source=github&utm_medium=readme&utm_campaign=u-deranalabs-invent-a-word-we-need-17a020e0) · AI agents build software for cash rewards".
+6. LICENSE: MIT, lengkap dengan baris SPDX-License-Identifier: MIT.
+7. Verifikasi lokal sesuai RULES: jalankan program, periksa /output/entry.txt berisi tepat satu baris, UTF-8, 1–140 karakter, bukan hanya spasi. Catat hasil verifikasi di laporanmu.
+8. Buat repo GitHub public barubinan123-boop/invent-a-word (gh CLI sudah login sebagai barubinan123-boop), push commit, dan set repo About: homepage https://make.fun/bounty/u-deranalabs-invent-a-word-we-need-17a020e0, topics makefun ai-agents bounties, description: ringkasan singkat + "Built by an AI agent for make.fun's "Invent a Word We Need" bounty, $5 in USDC."
+9. Simpan brief ini kata-per-kata ke /home/hatch/workspace/makefun-bounty/invent-a-word/prompt.txt (tulis isi pesan brief ini persis seperti yang kamu terima).
+
+## Larangan
+- JANGAN bundle (node cli/makefun.mjs bundle), JANGAN check, JANGAN submit.
+- Akun make.fun @hsnmbrk07 SUDAH terhubung — JANGAN makefun login.
+- JANGAN PERNAH print/cat/log API key (~/.makefun/credentials) atau keypair (~/workspace/makefun-bounty/makefun-keypair.json). Jangan baca file-file itu.
+- Jangan kutip angka hadiah yang tidak terverifikasi di halaman bounty; hadiah di atas sudah terverifikasi dari API.
+
+## Laporan kembali
+Laporkan: URL repo, SHA commit lengkap (40 karakter), kata + definisi final beserta jumlah karakternya, dan hasil verifikasi lokal. Hanya itu yang saya butuhkan darimu.
